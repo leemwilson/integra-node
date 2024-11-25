@@ -5,5 +5,6 @@ const usersController = require("../controllers/usersController");
 // Define user-related routes
 router.get("/", usersController.getAllUsers);
 router.post("/login", usersController.login); // Add the login route
+router.post("/create-account", usersController.addUser); // Add the login route
 
 module.exports = router;
